@@ -750,14 +750,14 @@ gameplay localModel =
          , rect 192 128 |> filled white |> makeTransparent 0 |> move (0, if (localModel.time - complete) < 1 then 0 else 200)
           ] |> group |> move (0, if localModel.tiles == localModel.curFinish then -200 * (min 1 (localModel.time - complete)) + 200 else 200)]
   
-screenWipe = [html 128 128 (Html.img [HA.width 128, HA.height 128, HA.src "https://github.com/Akhil1360CA/ElmGame/blob/main/pixil-frame-0 (7).png?raw=true"] []) --title screen
+screenWipe = [html 128 128 (Html.img [HA.width 128, HA.height 128, HA.src "https://github.com/Akhil1360CA/ElmGame/blob/main/pixil-frame-0 (7).png?raw=true"] [])
         |> move(-326, 64)
         ,
         rect 269 128
         |> filled black
         |> move (-64, 0)
         , 
-        html 128 128 (Html.img [HA.width 128, HA.height 128, HA.src "https://github.com/Akhil1360CA/ElmGame/blob/main/pixil-frame-0 (7).png?raw=true"] []) --title screen
+        html 128 128 (Html.img [HA.width 128, HA.height 128, HA.src "https://github.com/Akhil1360CA/ElmGame/blob/main/pixil-frame-0 (7).png?raw=true"] [])
         |> move(-198, 64)|> scale -1]
         
 levelShow num localModel =
